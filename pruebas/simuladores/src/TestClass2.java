@@ -23,8 +23,8 @@ public class TestClass2 {
             System.out.println("f is a Flyer");
         if (e instanceof Bird)
             System.out.println("e is a Bird");
-        // if(b instanceof Bird) System.out.println("b is a Bird"); Incompatible
-        // conditional operand types Bat and Bird
+        // if(b instanceof Bird) System.out.println("b is a Bird");
+        // Incompatible conditional operand types Bat and Bird
     }
 }
 // What will be printed when the above code is compiled and run?

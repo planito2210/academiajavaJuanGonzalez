@@ -1,26 +1,12 @@
-
-//What is wrong with the following code?
-class MyException extends Exception {
-}
-
 public class TestClass {
-    public static void main(String[] args) throws MyException {
-        TestClass tc = new TestClass();
-        try {
-            tc.m1();
-        } catch (MyException e) {
-            tc.m1();
-        } finally {
-            tc.m2();
-        }
+    static int someInt = 10;
+
+    public static void changeIt(int a) {
+        a = 20;
     }
 
-    public void m1() throws MyException {
-        throw new MyException();
+    public static void main(String[] args) {
+        changeIt(someInt);
+        System.out.println(someInt);
     }
-
-    public void m2() throws RuntimeException {
-        throw new NullPointerException();
-    }
-
 }
